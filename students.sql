@@ -43,6 +43,7 @@ CREATE TABLE IF NOT EXISTS `the_expendables` (
 
 INSERT INTO `the_expendables` (`id`, `name`, `surname`, `sex`, `birth_year`, `department`, `eie`) VALUES
 (1, 'Антонио', 'Бандерас', 'м', 1960, 'Drama', 174),
+(2, 'Арнольд', 'Шварценеггер', 'м', 1947, 'Action', 188),
 (3, 'Виктор', 'Ортис', 'м', 1987, 'Action', 178),
 (4, 'Глен', 'Пауэлл', 'м', 1988, 'Drama', 183),
 (5, 'Джейсон', 'Стейтем', 'м', 1967, 'Action', 178),
