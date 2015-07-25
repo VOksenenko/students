@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Каркас страницы добавления нового студента  -->
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>The Expendables</title>
+<!-- Использую каскадные таблицы от Bootstrap -->
+<link href="/css/bootstrap.css" rel="stylesheet"/>
+</head>
+
+<body style="background-color: #eeeeee">
+<h1 align="center">WELCOME TO THE_EXPENDABLES HIGH SCHOOL</h1>
+<div  class="container">
+	<div class="jumbotron">
+			<!-- Кнопка на страницу списка всех студентов -->
+			<div class="row">
+			<div class="col-md-4">
+			<form action="/application/controllers/student_get_all.php">
+			<button type="submit"  class="btn btn-primary"><h3>Список студентов</h3></button>
+			</form >
+			</div>
+			
+			<!-- Кнопка на главную -->
+			<div class="col-md-4">
+			<form action="/index.php">
+			<button type="submit" class="btn  btn-large-green "><h3>Главная</h3></button>
+			</form >
+			</div>
+			
+			<!-- Кнопка на страницу удаления студента -->
+			<div class="col-md-4">
+				<form action="/application/controllers/student_remove.php">
+				<button type="submit" class="btn  btn-large-red"><h3>Удалить студента<h3></button>
+				</form>
+			</div>
+		</div>
+    </div>
+</div>
