@@ -1,0 +1,45 @@
+﻿<!--Форма добавления нового студента -->
+<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<!--После нажатия кнопки Отправить, будет вызван контроллер student_added -->
+		<form method="post" action = "/student_added">
+		
+		<div class="form-group">
+		<!--Уведомление с просьбой заполнить все поля. -->
+		<h3 align="center"><font color="red">Заполните, пожалуйста все поля!</font></h3>
+		
+		<!--Поля для заполнения имени и фамилии -->
+		<label for="name">Имя </label>
+		<input type="text" class="form-control" name="name" placeholder="Имя" value=''>
+		<label for="surname">Фамилия </label>
+		<input type="text" class="form-control" name="surname" placeholder="Фамилия" value='' ></div>
+		
+		<!--Форма выбора пола студента. -->
+		<div>
+		<label for="sex">Пол </label><br>
+			<label class="radio-inline">
+				<input type="radio" name="radio"  value="м"> мужской
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="radio" value="ж"> женский
+			</label>
+		</div><br>
+		
+		<div class="form-group">
+		<!--Год рождения, факультет, балл ЗНО. -->
+		<label for="birth_year">Год рождения</label> 
+		<input type="text" class="form-control" name="birth_year" placeholder="1987" value=''>
+		<label for="department">Факультет </label>
+		<input type="text" class="form-control" name="department" placeholder="Факультет" value=''>
+		<label for="eie">Балл по ЗНО </label>
+		<input type="text" class="form-control" name="eie" placeholder="200" value=''>
+		
+		<br><br>
+		<!--Кнопка отправить под формой -->
+		<button  type="submit" class="form-control mygreen" name="add">Отправить</button>
+		</div>	
+		</form>
+		</div>
+	<div class="col-md-3"></div>
+</div>

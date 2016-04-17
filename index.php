@@ -1,7 +1,6 @@
 ﻿<?php
-// Перенаправление на главную страницу.
-require "application/controllers/views/main.html";
-
+/**
+* Подключаем файл boot.php 
+*/
+require_once "application/boot.php";
 ?>
-</body>
-</html>

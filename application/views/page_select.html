@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!-- Каркас страницы со списком всех студентов  -->
+<!-- Каркас страницы выбора студента для редактирования  -->
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -16,24 +16,43 @@
 		<div class="row">
 			<!-- Кнопка на главную -->
 			<div class="col-md-4">
-			<form action="/index.php">
+			<form action="/main">
 			<button type="submit"  class="btn btn-primary"><h3>Главная</h3></button>
 			</form >
 			</div>
 			
 			<!-- Кнопка на страницу с формой для добавления нового студента -->
 			<div class="col-md-4">
-			<form action="/application/controllers/student_add.php">
+			<form action="/add">
 			<button type="submit" class="btn  btn-large-green "><h3>Добавить студента</h3></button>
 			</form >
 			</div>
 			
 			<!-- Кнопка на страницу удаления студента -->
 			<div class="col-md-4">
-				<form action="/application/controllers/student_remove.php">
-				<button type="submit" class="btn  btn-large-red"><h3>Удалить студента<h3></button>
-				</form>
+			<form action="/toremove">
+			<button type="submit" class="btn  btn-large-red"><h3>Удалить студента</h3></button>
+			</form>
 			</div>
 		</div>
     </div>
-</div>		
+</div>	
+<div class="row">
+	<div class="col-md-2"></div>
+	<div align="center" class="col-md-7">
+	<h2 align="center"><font color="red">Выберите запись для редактирования</font></h2>
+		<!--Таблица с результатами запроса-->
+		<table  class='table table-bordered'>
+		<form method="post" action="/edit">
+		<tr>
+		<td></td>
+		<td><b>Имя</b></td>
+		<td><b>Фамилия</b></td>
+		<td><b>Пол</b></td>
+		<td><b>Год рождения</b></td>
+		<td><b>Факультет</b></td>
+		<td><b>Оценка за ЗНО</b></td>
+		</tr>
+		<!--Вставляем полученные данные из запроса-->
+		
+		

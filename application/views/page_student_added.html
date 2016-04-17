@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<!-- Каркас страницы добавления нового студента  -->
+﻿<!DOCTYPE html>
+<!-- Каркас страницы после добавления нового студента  -->
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -15,21 +15,21 @@
 			<!-- Кнопка на страницу списка всех студентов -->
 			<div class="row">
 			<div class="col-md-4">
-			<form action="/application/controllers/student_get_all.php">
+			<form action="/getall">
 			<button type="submit"  class="btn btn-primary"><h3>Список студентов</h3></button>
 			</form >
 			</div>
 			
 			<!-- Кнопка на главную -->
 			<div class="col-md-4">
-			<form action="/index.php">
+			<form action="/main">
 			<button type="submit" class="btn  btn-large-green "><h3>Главная</h3></button>
 			</form >
 			</div>
 			
 			<!-- Кнопка на страницу удаления студента -->
 			<div class="col-md-4">
-				<form action="/application/controllers/student_remove.php">
+				<form action="/toremove">
 				<button type="submit" class="btn  btn-large-red"><h3>Удалить студента<h3></button>
 				</form>
 			</div>
